@@ -1,10 +1,6 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      java: corretto8
-
   pre_build:
     commands:
       - echo Build started on `date`
@@ -22,3 +18,7 @@ artifacts:
     - target/spring-boot-todo.jar
     - appspec.yml
   discard-paths: yes
+
+cache:
+  paths:
+    - "/root/.m2/**/*"
