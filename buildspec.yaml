@@ -16,11 +16,10 @@ phases:
 
   post_build:
     commands:
-      - mv target/spring-boot-todo.jar spring-boot-todo.jar
       - echo Build completed on `date`
 
 artifacts:
   files:
-    - spring-boot-todo.jar
+    - target/spring-boot-todo.jar
     - appspec.yml
   discard-paths: yes
