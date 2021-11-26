@@ -1,0 +1,1 @@
+INSERT INTO TODO (title, content, user_id ) VALUES ('firstTodoTitle', 'firstTodoContent', '1');
